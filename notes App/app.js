@@ -1,4 +1,9 @@
-const fs = require('fs')
+// const fs = require('fs')
 
-fs.writeFileSync('notes.txt', 'My name is Petros.')
-fs.appendFileSync('notes.txt',  ` I'm 34 years old.` )
+// fs.writeFileSync('notes.txt', 'My name is Petros.')
+// fs.appendFileSync('notes.txt',  ` I'm 34 years old.` )
+
+const onoma = require('./utils.js')
+ 
+
+console.log(onoma);
