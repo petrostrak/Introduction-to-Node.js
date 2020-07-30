@@ -1,3 +1,7 @@
 const name = 'Petros'
 
-module.exports = name
+function add(a, b){
+    return a + b
+}
+
+module.exports = add
