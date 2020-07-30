@@ -1,17 +1,12 @@
 const validator = require('validator')
-
 const chalk  = require('chalk')
-const log = console.log
-const error = chalk.bold.red
-const warning = chalk.keyword('orange')
-const success = chalk.bold.green
 
-// const getNotes = require('./notes.js');
- 
-// const message = getNotes('Suprise motherfucker!')
+const command = process.argv[2]
 
-// console.log(validator.isEmail('pit.trak@gmail.com'));
-// console.log(validator.isURL('https://www.google.com'))
+if(command === 'add'){
+    console.log('adding note');
+} else if (command === 'remove'){
+    console.log('removing note');
+}
 
-log(chalk.green.underline.bold('Success') + chalk.red('!'))
-log(success('Success!'))
+console.log(process.argv);
