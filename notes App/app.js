@@ -2,7 +2,7 @@ const validator = require('validator')
 const chalk = require('chalk')
 const yargs = require('yargs')
 const notes = require('./notes.js')
-const { removeNote } = require('./notes.js')
+const { removeNote, listNotes } = require('./notes.js')
 
 // Customize yargs version
 
@@ -61,7 +61,7 @@ yargs.command({
     command: 'list',
     describe: 'Listing all notes',
     handler: () => {
-        console.log('All notes');
+        listNotes()
     }
 })
 

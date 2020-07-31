@@ -5,6 +5,14 @@ function getNotes(notes) {
     return notes
 }
 
+function listNotes(){
+    const notes = loadNotes()
+    console.log(chalk.green.bold('Your notes :'));
+    notes.forEach(note => {
+        console.log(note.title);
+    });
+}
+
 function addNote(title, body) {
     const notes = loadNotes()
     const duplicateNotes = notes.filter((note) => {
@@ -54,5 +62,6 @@ function loadNotes() {
 module.exports = {
     getNotes: getNotes,
     addNote: addNote,
-    removeNote: removeNote
+    removeNote: removeNote,
+    listNotes: listNotes
 }
