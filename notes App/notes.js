@@ -1,10 +1,6 @@
 const fs = require('fs')
 const chalk = require('chalk')
 
-function getNotes(notes) {
-    return notes
-}
-
 function readNotes(title){
     const notes = loadNotes()
     const note = notes.find((note)=> note.title === title)
@@ -70,7 +66,6 @@ function loadNotes() {
 }
 
 module.exports = {
-    getNotes: getNotes,
     addNote: addNote,
     removeNote: removeNote,
     listNotes: listNotes,
