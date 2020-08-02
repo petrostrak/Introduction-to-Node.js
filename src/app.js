@@ -30,7 +30,7 @@ app.get('', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About me',
-        name: 'Petros'        
+        name: 'Petros Trak'        
     })
 })
 
@@ -38,7 +38,7 @@ app.get('/help', (req, res) => {
     res.render('help', {
         msg: 'This is a basic weather application where the user can search for a city to get the forecast',
         title: 'Help',
-        name: 'Petros'  
+        name: 'Petros Trak'  
     })
 })
 
@@ -84,7 +84,7 @@ app.get('/products', (req, res) => {
 app.get('/help/*', (req, res) => {
     res.render('error', {
         title: '404',
-        name: 'Petros',
+        name: 'Petros Trak',
         msg: 'Help article not found' 
     })
 })
